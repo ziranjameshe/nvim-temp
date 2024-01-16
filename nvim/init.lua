@@ -1,2 +1,2 @@
 require("core")
-require("plugins")
+require("lazy_init")
