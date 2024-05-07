@@ -88,15 +88,6 @@ keymap.set("n", "<leader>k",  "<C-w>-", option)     -- Decrease window height
 keymap.set("n", "<leader>l",  "<C-w>>", option)     -- Increase window width
 keymap.set("n", "<leader>h",  "<C-w><", option)     -- Decrease window width
 
--- vim-maximizer
-keymap.set("n", "<leader>m", ":MaximizerToggle<CR>", option) -- toggle split window maximization
-
--- nvim-tree
-keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>",  option) -- toggle file explorer
-
--- tagbar
-keymap.set("n", "<leader>tg", ":TagbarToggle<cr>", option)
-
 -- Navigate buffers
 keymap.set("n", "<S-l>", ":bnext<CR>",     option)
 keymap.set("n", "<S-h>", ":bprevious<CR>", option)
@@ -104,20 +95,3 @@ keymap.set("n", "<S-h>", ":bprevious<CR>", option)
 -- Indent code
 keymap.set("v", "<", "<gv", option)
 keymap.set("v", ">", ">gv", option)
-
-
--- Disable nvim replaces the register with the content being pasted
-keymap.set("v", "p",         '"_dP',         option)
-
-
--- Visual Block --
--- Move text up and down
-keymap.set("x", "J", ":move '>+1<CR>gv-gv", option)
-keymap.set("x", "K", ":move '<-2<CR>gv-gv", option)
-
--- Multi-cursors --
-vim.cmd([[
-    let g:VM_maps = {}
-    let g:VM_maps["Select Cursor Down"] = '<C-j>'
-    let g:VM_maps["Select Cursor Up"]   = '<C-k>'
-]])

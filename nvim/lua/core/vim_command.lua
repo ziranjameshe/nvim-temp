@@ -25,15 +25,6 @@ vim.api.nvim_exec([[
 -- Highlight unnecessary white spaces
 vim.cmd("match errorMsg /\\s\\+$/")
 
-
--- vim.cmd([[
---     augroup VisualEventandLeave
---         autocmd!
---         autocmd ModeChanged *:[vV\x16]* :Gitsigns toggle_current_line_blame
---         autocmd Modechanged [vV\x16]*:* :Gitsigns toggle_current_line_blame
---     augroup END
--- ]])
-
 vim.cmd([[
     cabbrev t tabnew
 ]])
