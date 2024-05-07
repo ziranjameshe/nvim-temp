@@ -1,3 +1,1 @@
-return {
-    "roxma/vim-tmux-clipboard",
-}
+return {"roxma/vim-tmux-clipboard"}

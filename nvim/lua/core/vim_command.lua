@@ -9,7 +9,7 @@ vim.cmd([[
 -- Setup tab-line colours
 vim.cmd([[
     hi TabLineSel  gui=NONE guibg=#3e4452 guifg=#abb2bf cterm=bold term=NONE ctermfg=lightgreen
-    hi TabLine     gui=NONE guibg=#3e4452 guifg=#abb2bf cterm=bold term=NONE ctermfg=white 
+    hi TabLine     gui=NONE guibg=#3e4452 guifg=#abb2bf cterm=bold term=NONE ctermfg=white
 ]])
 
 vim.api.nvim_exec([[
